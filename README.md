@@ -86,3 +86,6 @@ Expected JSON keys:
 - python -m pip install flake8 black
 - flake8
 - black .
+
+- Demo--<img width="1900" height="824" alt="image" src="https://github.com/user-attachments/assets/2f547c2a-a090-4628-9c64-e5a48b78eefc" />
+
