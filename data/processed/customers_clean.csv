@@ -1,0 +1,7 @@
+customer_id,name,email,region,signup_date,is_valid_email
+1,Abhishek Updated,abhi@gmail.com,North,2024-01-01,True
+6,John,john@email.com,Unknown,2023-11-11,True
+4,Aman,aman@email.com,East,2023-05-20,True
+2,Rahul,,West,,False
+3,Neha,neha.gmail.com,Unknown,,False
+5,Sara,sara@email,South,,False

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment Dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Business Analytics Dashboard</h1>
+    </header>
+    <main class="container">
+      <section class="card">
+        <h2>Revenue Trend</h2>
+        <div class="card-header" style="margin-bottom:8px;">
+          <div>
+            <label for="rev-from">From</label>
+            <input id="rev-from" type="month" />
+            <label for="rev-to" style="margin-left:8px;">To</label>
+            <input id="rev-to" type="month" />
+            <button id="rev-apply" style="margin-left:8px;">Apply</button>
+          </div>
+        </div>
+        <div class="status" id="rev-status">Loading...</div>
+        <canvas id="revenueChart" aria-label="Monthly Revenue Trend" role="img"></canvas>
+      </section>
+
+      <section class="card">
+        <h2>Category Breakdown</h2>
+        <div class="status" id="cat-status">Loading...</div>
+        <canvas id="categoryChart" aria-label="Category Performance" role="img"></canvas>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Top Customers</h2>
+          <input id="customer-search" type="search" placeholder="Search customers..." aria-label="Search customers" />
+        </div>
+        <div class="status" id="cust-status">Loading...</div>
+        <div class="table-wrap">
+          <table id="customers-table">
+            <thead>
+              <tr>
+                <th data-key="customer_name">Customer</th>
+                <th data-key="region">Region</th>
+                <th data-key="total_spend">Total Spend</th>
+                <th data-key="order_count">Orders</th>
+                <th data-key="churn_status">Churn</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Region Summary</h2>
+        <div class="status" id="region-status">Loading...</div>
+        <div class="table-wrap">
+          <table id="regions-table">
+            <thead>
+              <tr>
+                <th>Region</th>
+                <th>Revenue</th>
+                <th>Orders</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="app-footer">
+      <small>Data powered by FastAPI backend</small>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+  </html>

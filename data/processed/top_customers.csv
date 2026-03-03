@@ -1,0 +1,4 @@
+customer_id,name,region,total_spend,churned
+6.0,John,Unknown,1200.0,True
+1.0,Abhishek Updated,North,1000.0,False
+2.0,Rahul,West,700.0,False

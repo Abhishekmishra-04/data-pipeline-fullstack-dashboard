@@ -1,0 +1,8 @@
+order_id,customer_id,product,amount,order_date,status,order_year_month
+101,1.0,Laptop,1000.0,2024-01-10,completed,2024-01
+102,2.0,Phone,700.0,2024-02-10,completed,2024-02
+103,,Tablet,500.0,2024-02-15,cancelled,2024-02
+104,3.0,Laptop,1100.0,2024-02-01,refunded,2024-02
+105,4.0,Phone,700.0,2024-03-15,pending,2024-03
+106,,Tablet,500.0,2024-03-20,,2024-03
+107,6.0,Laptop,1200.0,,completed,

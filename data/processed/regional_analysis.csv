@@ -1,0 +1,6 @@
+region,num_customers,num_orders,total_revenue,avg_revenue_per_customer
+East,1,0,0.0,0.0
+North,1,1,1000.0,1000.0
+South,1,0,0.0,0.0
+Unknown,2,1,1200.0,600.0
+West,1,1,700.0,700.0
